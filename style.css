@@ -270,7 +270,7 @@ h1, h2, h3 { font-weight: 500; margin-top: 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem 2rem 1rem; /* Marge supérieure augmentée */
+  padding: 5rem 1rem 1rem 1rem; /* Dégradé plus haut, texte plus bas */
   background: var(--color-white);
 }
 
@@ -340,8 +340,9 @@ h1, h2, h3 { font-weight: 500; margin-top: 0; }
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 5rem 0 2rem 0; /* Marge supérieure augmentée */
-    background: linear-gradient(to top, rgba(255,255,255,1) 40%, rgba(255,255,255,0));
+    width: 100%;
+    padding: 12rem 0 0 0; /* Pousse le texte tout en bas, et allonge le dégradé */
+    background: linear-gradient(to top, rgba(255,255,255,1) 30%, rgba(255,255,255,0));
   }
   .gold-line {
     max-width: 200px;
