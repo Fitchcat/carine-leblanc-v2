@@ -6,6 +6,16 @@
   --font-primary: 'Montserrat', sans-serif;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
@@ -238,14 +248,14 @@ h1, h2, h3 { font-weight: 500; margin-top: 0; }
 }
 
 .hero-title .text-black {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
   color: var(--color-black);
   display: block;
 }
 
 .hero-title .text-gold {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 500;
   font-style: italic;
   color: var(--color-gold);
