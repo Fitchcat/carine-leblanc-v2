@@ -29,3 +29,30 @@ window.addEventListener('scroll', () => {
     header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';
   }
 });
+
+// Gestion du menu burger mobile
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const nav = document.querySelector('.nav');
+
+if (mobileMenuBtn && nav) {
+  mobileMenuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    // Changer l'icône (menu <-> x)
+    const icon = mobileMenuBtn.querySelector('i');
+    if (nav.classList.contains('active')) {
+      icon.setAttribute('data-lucide', 'x');
+    } else {
+      icon.setAttribute('data-lucide', 'menu');
+    }
+    lucide.createIcons();
+  });
+
+  // Fermer le menu quand on clique sur un lien
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+      mobileMenuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+      lucide.createIcons();
+    });
+  });
+}
