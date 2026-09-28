@@ -617,8 +617,34 @@ footer {
   }
 }
 
+.mobile-break {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
+  .header-transition {
+    padding-top: 2rem;
+  }
+  .split-section {
+    padding: 3.5rem 0;
+  }
+  .split-section:first-of-type {
+    padding-top: 4rem;
+  }
+  .values {
+    padding: 3.5rem 0;
+  }
+  .value-item {
+    padding: 1.2rem;
+  }
+  .services-premium {
+    padding: 4rem 0;
+  }
+  .mobile-break {
+    display: block;
+  }
+
   .mobile-menu-btn {
     display: block;
   }
